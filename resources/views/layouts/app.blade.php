@@ -5,14 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>@yield('subtitulo')</title>
-
-        <!-- Fonts -->
+         @vite('resources/css/app.css')
+                <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
     </head>
     <body>
-        <h1>@yield('titulo')</h1>
+        <h1  class="text-3xl font-bold underline">@yield('titulo')</h1>
+       
        
         <nav>
             <!--idea es navegar por estas paginas-->

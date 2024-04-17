@@ -6,5 +6,5 @@
     BIENVENIDO A CONTACTO
 @endsection
 @section('contenido')
-    Estamos ubicados en Acambay Estadi de Mexico!!
+    Estamos ubicados en Acambay Estado de Mexico!!
 @endsection
