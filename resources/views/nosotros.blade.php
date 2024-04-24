@@ -1,4 +1,6 @@
 @extends('layouts/app')
+
+{{--soy un comentario--}}
 @section('subtitulo')
     nosotros | laravel
 @endsection

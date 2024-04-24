@@ -26,7 +26,9 @@ Route::get('/contactanos', function () {
     //FORMA 1 DE REDIRECCIONAR
    // return redirect('/form-contacto');
     //FORMA 2 DE REDIRECCIONAMIENTO
-   return redirect() ->route('formulario');
+   //return redirect() ->route('formulario');
+   //FORMA 3 DE REDIRECCIONAMIENTO
+   return to_route('formulario');
 
 })->name('contacto');
 
