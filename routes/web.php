@@ -22,9 +22,15 @@ Route::get('/tienda-laptos', function () {
     return view('venta');
 })->name('tienda');
 Route::get('/contactanos', function () {
-    return redirect('/form-contacto');
+    //return view('contacto);
+    //FORMA 1 DE REDIRECCIONAR
+   // return redirect('/form-contacto');
+    //FORMA 2 DE REDIRECCIONAMIENTO
+   return redirect() ->route('formulario');
+
 })->name('contacto');
 
 Route::get('/form-contacto', function () {
     return("Bienvenido a Formularios de Contacto");
-})->name('contacto');
+//})->name('contacto');
+})->name('formulario');
