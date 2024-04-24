@@ -17,10 +17,11 @@
        
         <nav>
             <!--idea es navegar por estas paginas-->
-            <li><a href="/">Principal</a></li>
-            <li><a href="/nuestra-tienda">Nosotros</a></li>
-            <li><a href="/tienda-laptos">Venta Cosmeticos</a></li>
-            <li><a href="/contactanos">Contáctanos</a></li>
+            <li><a href="{{route('home')}}">Principal</a></li>
+            <!--INTERPOLACION-->
+            <li><a href="{{route('nosotros')}}">Nosotros</a></li> 
+            <li><a href="{{route('tienda')}}">Venta Cosmeticos</a></li>
+            <li><a href="{{route('contacto')}}">Contáctanos</a></li>
         </nav>
         <h4>@yield('contenido')</h4>
     </body>

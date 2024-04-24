@@ -6,5 +6,5 @@
     BIENVENIDO A NOSOTROS
 @endsection
 @section('contenido')
-    Somos una empresa lider en venta de cosmeticos y perfumeria!!
+     {{$empresa}} Somos una empresa lider en venta de cosmeticos y perfumeria!!, encunetrasnos en {{$direccion}}
 @endsection
