@@ -76,9 +76,22 @@
     {{--DIRECTIVA FOREACH--}}
     @section('foreach')
     {{--No necesita conteo, no es necesario decirle donde inicia y termina, se puede manipular--}}
-    @foreach ($equipos as $eq)
+    @forelse ($equipos as $eq)
         <li>{{$eq}}</li>
-    @endforeach
+        @empty
+           <li>NO HAY EQUIPOS QUE SEAN SUPERIOR A CHIVAS DE CORAZON</li> 
+        
+    @endforelse
+@endsection
+
+{{--USANDO DIRECTIVAS EN FACTOIAL--}}
+    @section('factorial')
+    {{$i = 0}}
+    {{$factorial = 1}}
+    @for ($i = 1 ; $i <=$tablaMul; $i++)
+    <li>{{$factorial *= $i}}</li>
+@endfor
+
 
 {{-- 
    {{$empresa}} Somos una empresa lider en venta de cosmeticos y perfumeria!!, encunetrasnos en {{$direccion}}

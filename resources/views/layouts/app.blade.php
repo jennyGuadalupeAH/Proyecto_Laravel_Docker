@@ -29,5 +29,6 @@
         <p>@yield('while')</p>
         <p>@yield('php')</p>
         <p>@yield('foreach')</p>
+        <p>@yield('factorial')</p>
     </body>
 </html>

@@ -15,7 +15,7 @@ Route::get('/acercade', function () {
         "direccion" => $dir,
         "edad"=>11,
         "noEstacion" =>4,
-        "tablaMul" => 7,
+        "tablaMul" => 5,
         "equipos" => ["Chivas", "Necaxa", "Cruz Azul", "Toluca", "Pumas"]
     ];
 
