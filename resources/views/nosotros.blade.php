@@ -39,6 +39,13 @@
         @break
     @default
 @endswitch
+@endsection
+
+{{--DIRECTIVA FOR--}}
+@section('for')
+    @for ($i =1; $i <= 10; $i++)
+    <li>{{$tablaMul}} X {{$i}} = {{$i*$tablaMul}}</li>
+    @endfor 
 {{-- 
    {{$empresa}} Somos una empresa lider en venta de cosmeticos y perfumeria!!, encunetrasnos en {{$direccion}}
 --}}
