@@ -56,7 +56,23 @@
      {{--debe estar interpolado--}}
      {{$i++}}
     @endwhile
+@endsection
+
+    {{--DIRECTIVA PHP--}}
+    @section('php')
+    {{-- {{$i = 1}} --}}
+   {{--No seria lo correcto--}}
+   {{--<php $i = 1?>--}}
+    @php
+    $i =1
+    @endphp
+    @while($i<=10)
+     <li>{{$tablaMul}} X {{$i}} = {{$i*$tablaMul}}</li>
+     {{--debe estar interpolado--}}
+    @php $i++ @endphp
+    @endwhile
+    @endsection
+
 {{-- 
    {{$empresa}} Somos una empresa lider en venta de cosmeticos y perfumeria!!, encunetrasnos en {{$direccion}}
 --}}
-@endsection

@@ -27,5 +27,7 @@
         <p>@yield('switch')</p>
         <p>@yield('for')</p>
         <p>@yield('while')</p>
+        <p>@yield('php')</p>
+
     </body>
 </html>
