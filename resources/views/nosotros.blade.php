@@ -73,6 +73,14 @@
     @endwhile
     @endsection
 
+    {{--DIRECTIVA FOREACH--}}
+    @section('foreach')
+    {{--No necesita conteo, no es necesario decirle donde inicia y termina, se puede manipular--}}
+    @foreach ($equipos as $eq)
+        <li>{{$eq}}</li>
+    @endforeach
+
 {{-- 
    {{$empresa}} Somos una empresa lider en venta de cosmeticos y perfumeria!!, encunetrasnos en {{$direccion}}
 --}}
+@endsection

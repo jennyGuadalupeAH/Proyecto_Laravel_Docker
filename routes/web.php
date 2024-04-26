@@ -16,7 +16,7 @@ Route::get('/acercade', function () {
         "edad"=>11,
         "noEstacion" =>4,
         "tablaMul" => 7,
-        
+        "equipos" => ["Chivas", "Necaxa", "Cruz Azul", "Toluca", "Pumas"]
     ];
 
     // OBTENER ES POR MEDIO DE SU CLAVE en la web

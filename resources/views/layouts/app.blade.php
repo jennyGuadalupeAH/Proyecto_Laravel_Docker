@@ -28,6 +28,6 @@
         <p>@yield('for')</p>
         <p>@yield('while')</p>
         <p>@yield('php')</p>
-
+        <p>@yield('foreach')</p>
     </body>
 </html>
