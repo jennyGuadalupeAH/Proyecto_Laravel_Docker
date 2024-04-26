@@ -7,9 +7,10 @@
 @section('titulo')
     BIENVENIDO A NOSOTROS
 @endsection
+{{--DIRECTIVA IF--}}
 @section('contenido')
 {{--no se validan con llaves--}}
-{{--DIRECTIVA IF--}}
+
 @if($edad <= 12)
     <h3>Aun no puedes tomar cerveza</h3>
     <h3>Eres un niño en desarrollo</h3>
@@ -19,6 +20,25 @@
     @else 
     <h3>Atragantate</h3>
 @endif
+@endsection
+
+{{--DIRECTIVA SWITCH--}}
+@section('switch')
+@switch($noEstacion)
+    @case(1)
+    <h3>PRIMAVERA</h3>
+        @break
+    @case(2)
+    <h3>VERANO</h3>
+        @break
+    @case(3)
+    <h3>OTOÑO</h3>
+        @break
+    @case(4)
+    <h3>INVIERNO</h3>
+        @break
+    @default
+@endswitch
 {{-- 
    {{$empresa}} Somos una empresa lider en venta de cosmeticos y perfumeria!!, encunetrasnos en {{$direccion}}
 --}}

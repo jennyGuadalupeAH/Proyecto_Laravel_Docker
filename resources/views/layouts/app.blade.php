@@ -24,5 +24,6 @@
             <li><a href="{{route('contacto')}}">Contáctanos</a></li>
         </nav>
         <p>@yield('contenido')</p>
+        <p>@yield('switch')</p>
     </body>
 </html>

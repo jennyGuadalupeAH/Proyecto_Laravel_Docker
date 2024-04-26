@@ -14,7 +14,7 @@ Route::get('/acercade', function () {
         "empresa" => $empresa,
         "direccion" => $dir,
         "edad"=>11,
-        
+        "noEstacion" =>4
     ];
 
     // OBTENER ES POR MEDIO DE SU CLAVE en la web
