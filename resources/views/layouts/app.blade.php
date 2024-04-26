@@ -23,6 +23,6 @@
             <li><a href="{{route('tienda')}}">Venta Cosmeticos</a></li>
             <li><a href="{{route('contacto')}}">Contáctanos</a></li>
         </nav>
-        <h4>@yield('contenido')</h4>
+        <p>@yield('contenido')</p>
     </body>
 </html>

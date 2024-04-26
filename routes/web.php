@@ -12,7 +12,9 @@ Route::get('/acercade', function () {
     //tambien podemos obtener en la API o en la base de datos 
     $datos = [
         "empresa" => $empresa,
-        "direccion" => $dir
+        "direccion" => $dir,
+        "edad"=>11,
+        
     ];
 
     // OBTENER ES POR MEDIO DE SU CLAVE en la web
