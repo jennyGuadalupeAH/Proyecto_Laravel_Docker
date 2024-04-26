@@ -26,5 +26,6 @@
         <p>@yield('contenido')</p>
         <p>@yield('switch')</p>
         <p>@yield('for')</p>
+        <p>@yield('while')</p>
     </body>
 </html>

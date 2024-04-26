@@ -46,6 +46,16 @@
     @for ($i =1; $i <= 10; $i++)
     <li>{{$tablaMul}} X {{$i}} = {{$i*$tablaMul}}</li>
     @endfor 
+    @endsection
+
+{{--DIRECTIVA WHILE--}}
+@section('while')
+    {{$i = 1}}
+    @while($i<=10)
+     <li>{{$tablaMul}} X {{$i}} = {{$i*$tablaMul}}</li>
+     {{--debe estar interpolado--}}
+     {{$i++}}
+    @endwhile
 {{-- 
    {{$empresa}} Somos una empresa lider en venta de cosmeticos y perfumeria!!, encunetrasnos en {{$direccion}}
 --}}
